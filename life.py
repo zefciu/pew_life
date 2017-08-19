@@ -6,7 +6,7 @@ class Board():
         self.grid = self._empty_grid()
 
     def toggle_pixel(self, x, y):
-        self.grid[x][y] = not self.grid[x][y]
+        self.grid[y][x] = not self.grid[y][x]
 
     def _count_neighbors(self, x, y):
         count = 0
